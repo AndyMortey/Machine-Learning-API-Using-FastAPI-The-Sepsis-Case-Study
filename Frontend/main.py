@@ -29,11 +29,11 @@ def get_prediction(data: DataFeatures):
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Main", "Predict"])
+page = st.sidebar.radio("Go to", ["Main", "Predict", "History"])
 
 if page == "Main":
     st.title("Sepsis Prediction App")
-    st.write("Use the navigation bar to access the predict page.")
+    st.write("Use the Navigation Bar to Access the Other Pages.")
 
 elif page == "Predict":
     st.title("Sepsis Prediction Page")
@@ -76,9 +76,11 @@ elif page == "Predict":
             "random_forest_prediction": prediction['random_forest_prediction']
         })
 
-    # Display prediction history
+elif page == "History":
+    st.title("Prediction History")
     if st.session_state['predictions']:
-        st.subheader("Prediction History")
         for i, pred in enumerate(st.session_state['predictions']):
             st.write(f"Prediction {i + 1}:")
             st.json(pred)
+    else:
+        st.write("No predictions made yet.")
