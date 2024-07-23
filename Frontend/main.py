@@ -37,7 +37,7 @@ if page == "Main":
 
 elif page == "Predict":
     st.title("Sepsis Prediction Page")
-    st.write("Enter the following features to predict sepsis:")
+    st.write("Enter the Following Features to Predict Sepsis:")
 
     # Collect input data from the user
     plasma_glucose = st.number_input("Plasma Glucose", min_value=0, max_value=500, step=1)
@@ -69,11 +69,20 @@ elif page == "Predict":
         st.write(f"Logistic Regression Prediction: {prediction['logistic_regression_prediction']}")
         st.write(f"Random Forest Prediction: {prediction['random_forest_prediction']}")
 
+        # Display probabilities as percentages
+        prob_log = [round(p * 100, 2) for p in prediction['logistic_regression_probability'][0]]
+        prob_ran = [round(p * 100, 2) for p in prediction['random_forest_probability'][0]]
+
+        st.write(f"Logistic Regression Prediction Probability: {prob_log[0]}%, {prob_log[1]}%")
+        st.write(f"Random Forest Prediction Probability: {prob_ran[0]}%, {prob_ran[1]}%")
+
         # Add the prediction to the session state history
         st.session_state['predictions'].append({
             "input": data.dict(),
             "logistic_regression_prediction": prediction['logistic_regression_prediction'],
-            "random_forest_prediction": prediction['random_forest_prediction']
+            "random_forest_prediction": prediction['random_forest_prediction'],
+            "logistic_regression_probability": f"{prob_log[0]}%, {prob_log[1]}%",
+            "random_forest_probability": f"{prob_ran[0]}%, {prob_ran[1]}%"
         })
 
 elif page == "History":
