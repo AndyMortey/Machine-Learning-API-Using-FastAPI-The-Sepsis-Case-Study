@@ -1,16 +1,20 @@
-FROM Python:3.12.4
+# Use a slim Python image for a smaller footprint
+FROM python:3.12.4-slim
 
-COPY requirements.txt /tmp/requirements.txt
-
-RUN python -m pip install --timeout 300000 -r /tmp/requirements.txt
-
-COPY . /app
-
-
+# Set up a working directory
 WORKDIR /app
 
+# Copy only requirements.txt first
+COPY requirements.txt requirements.txt
+
+# Install Uvicorn and other dependencies 
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port your app will run on
 EXPOSE 80
 
-CMD ["uvicorn", "api:app", '--host', "0.0.0.0", "--port", "80"]
-
-
+# Command to run the app
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "80"]

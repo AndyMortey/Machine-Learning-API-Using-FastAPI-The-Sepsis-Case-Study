@@ -1,14 +1,21 @@
-FROM Python:3.12.4
+# Use a slim Python image for a smaller footprint
+FROM python:3.12.4-slim
 
-COPY requirements.txt /tmp/requirements.txt
-
-RUN python -m pip install --timeout 300000 -r /tmp/requirements.txt
-
-COPY . /app
-
-
+# Set up a working directory
 WORKDIR /app
 
-EXPOSE 3000
+# Copy only requirements.txt first
+COPY requirements.txt requirements.txt
 
-CMD ["streamlit", "run", 'main.py', "--server.port=8501"]
+# Install Streamlit and other dependencies (using --no-cache-dir to reduce image size)
+RUN pip install --no-cache-dir streamlit
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port your Streamlit app will run on
+EXPOSE 8501
+
+# Command to run the Streamlit app with a specific port
+CMD ["streamlit", "run", "main.py", "--server.port=8501"]
