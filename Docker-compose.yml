@@ -1,12 +1,24 @@
-version: '3'
+version: '3.9'  
 services:
   api:
     build:
-      context: ./api
+      context: ./api/
+    environment:
+      - MODEL_PATH=/app/logistic_regression_pipeline.pkl
     ports:
       - '80:80'
+    volumes:
+      - ./api/Models:/app/Models # Mount local ./api/Models to container /app/Models 
+    deploy:
+      restart_policy:
+        condition: on-failure
   client:
     build:
-      context: ./Frontend
+      context: ./Frontend/
     ports:
       - '3000:8501'
+    deploy:
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - ./Frontend/build:/app/build # Persist build output in the client container
