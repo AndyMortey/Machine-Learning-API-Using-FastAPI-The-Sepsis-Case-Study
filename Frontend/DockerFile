@@ -7,16 +7,15 @@ WORKDIR /app
 # Copy only requirements.txt first
 COPY requirements.txt requirements.txt
 
-# Install Streamlit and other dependencies (using --no-cache-dir to reduce image size)
-RUN pip install --no-cache-dir streamlit
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Streamlit and other dependencies
+RUN pip install --no-cache-dir streamlit \
+    && pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
-COPY . /app/
+COPY . /app
 
 # Expose the port your Streamlit app will run on
 EXPOSE 8501
 
 # Command to run the Streamlit app with a specific port
 CMD ["streamlit", "run", "main.py", "--server.port=8501"]
-
