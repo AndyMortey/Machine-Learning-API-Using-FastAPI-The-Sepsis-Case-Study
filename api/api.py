@@ -21,9 +21,9 @@ def status_check():
     return {"Status": "API is Online..."}
 
 # Load models and encoder
-logistic_regression = joblib.load('../api/logistic_regression_pipeline.pkl')
-random_forest = joblib.load('../api/random_forest_pipeline.pkl')
-encoder = joblib.load('../api/label_encoder.pkl')
+logistic_regression = joblib.load('logistic_regression_pipeline.pkl')
+random_forest = joblib.load('random_forest_pipeline.pkl')
+encoder = joblib.load('label_encoder.pkl')
 
 @app.post('/predict')
 def predict_sepsis(data: DataFeatures):

@@ -2,7 +2,7 @@
 FROM python:3.12.4-slim
 
 # Set up a working directory
-WORKDIR /app
+WORKDIR /api
 
 # Copy only requirements.txt first
 COPY requirements.txt requirements.txt

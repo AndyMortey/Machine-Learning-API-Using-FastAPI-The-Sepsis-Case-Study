@@ -2,7 +2,7 @@
 FROM python:3.12.4
 
 # Set up a working directory
-WORKDIR /app
+WORKDIR /api
 
 # Copy requirements.txt first
 COPY requirements.txt /app/requirements.txt
