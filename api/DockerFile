@@ -1,5 +1,5 @@
 # Use a slim Python image for a smaller footprint
-FROM python:3.12.4
+FROM python:3.12.4-slim
 
 # Set up a working directory
 WORKDIR /app
@@ -8,15 +8,12 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 
 # Install Uvicorn and other dependencies 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt\
+    python -m pip install --timeout 300000 -r requirements.txt
 
-RUN python -m pip install --timeout 300000 -r requirements.txt
 
 # Copy the rest of the application code
 COPY  . /app
-
-# Ensure model files are copied into the container
-COPY ../Models /app/Models
 
 # Expose the port your app will run on
 EXPOSE 80
