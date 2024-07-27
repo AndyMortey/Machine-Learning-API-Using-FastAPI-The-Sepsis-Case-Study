@@ -4,13 +4,11 @@ services:
     build:
       context: ./api
     ports:
-      - '80:80'
+      - '8000:8000'
   client:
     build:
       context: ./Frontend
     ports:
-      - '3000:8501'
+      - '8501:8501'
     depends_on:
       - api
-  
-

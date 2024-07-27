@@ -9,7 +9,9 @@ COPY requirements.txt requirements.txt
 
 # Install Streamlit and other dependencies
 RUN pip install --no-cache-dir streamlit \
-    && pip install --no-cache-dir -r requirements.txt
+    && pip install --no-cache-dir -r requirements.txt\
+    && pip install pydantic
+
 
 # Copy the rest of the application code
 COPY . /app
@@ -18,4 +20,5 @@ COPY . /app
 EXPOSE 8501
 
 # Command to run the Streamlit app with a specific port
-CMD ["streamlit", "run", "main.py", "--server.port=8501"]
+CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
