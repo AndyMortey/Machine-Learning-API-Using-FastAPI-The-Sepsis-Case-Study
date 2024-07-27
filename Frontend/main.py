@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import pandas as pd
 
 # Define the URL of your FastAPI backend
-backend_url = "http://127.0.0.1:8000"
+backend_url = "https://machine-learning-api-using-fastapi.onrender.com"
 
 # Create a class for the data features to ensure consistency with the FastAPI model
 class DataFeatures(BaseModel):
