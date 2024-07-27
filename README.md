@@ -51,3 +51,10 @@ This project aims to leverage machine learning models and FastAPI to predict sep
 
 └── README.md          &nbsp;&nbsp;&nbsp;      This file
 
+
+## Usage
+### API Backend
+The FastAPI application provides several endpoints to interact with the sepsis prediction model. Here are some images of the App:
+* This is the Homepage showing the Datafeatures;
+![image](https://github.com/user-attachments/assets/66aa2f11-46f8-41b4-8d04-4a2f30a7d8d7)
+
