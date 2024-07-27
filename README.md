@@ -32,13 +32,22 @@ This project aims to leverage machine learning models and FastAPI to predict sep
 ├── api/
 
 │   ├── Dockerfile &nbsp;&nbsp;&nbsp;          Dockerfile for building the API image
+
 │   ├── api.py     &nbsp;&nbsp;&nbsp;          Main FastAPI application code
+
 │   ├── models/    &nbsp;&nbsp;&nbsp;          Directory for storing trained models
+
 │   └── requirements.txt &nbsp;&nbsp;&nbsp;    Python dependencies for the API
+
 ├── Frontend/
+
 │   ├── Dockerfile &nbsp;&nbsp;&nbsp;          Dockerfile for building the frontend image
+
 │   ├── main.py    &nbsp;&nbsp;&nbsp;          Main Streamlit application code
+
 │   └── requirements.txt &nbsp;&nbsp;&nbsp;    Python dependencies for the frontend
+
 ├── docker-compose.yml &nbsp;&nbsp;&nbsp;      Configuration for Docker Compose
+
 └── README.md          &nbsp;&nbsp;&nbsp;      This file
 
