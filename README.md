@@ -74,7 +74,6 @@ The frontend is built using Streamlit and provides a user-friendly interface to 
 
 * This is the History Page that shows Predictions made by the App.
 ![image](https://github.com/user-attachments/assets/13ebd304-ab8a-4e56-8e2d-53b43223c88a)
-
 ### Docker
 * This shows the Docker container and Images on Docker Desktop
 ![image](https://github.com/user-attachments/assets/ab4aa317-c36e-41ba-9537-4dff1bd2e531)
@@ -82,7 +81,9 @@ The frontend is built using Streamlit and provides a user-friendly interface to 
 
 ## Resources
 **Access the API:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi.onrender.com/docs)
+
 **Access the Streamlit App:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi-the.onrender.com/)
+
 **The article published on Medium can be accessed via [this link]().
 
 ## Appreciation
