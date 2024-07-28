@@ -1,5 +1,6 @@
 # Machine-Learning-API-Using-FastAPI-The-Sepsis-Case-Study
-![image](https://github.com/user-attachments/assets/28749acb-7e1d-4896-9cd7-10e714fac352)
+![image](https://github.com/user-attachments/assets/10373352-ee0d-41ff-b571-ee0d63bb2e34)
+
 
 ## Project Description
 Sepsis is a life-threatening medical condition that arises when the body's response to infection causes injury to its own tissues and organs. It occurs when chemicals released into the bloodstream to fight an infection trigger inflammatory responses throughout the body. This inflammation can lead to a cascade of changes that damage multiple organ systems, leading them to fail, and can be fatal if not promptly treated.
