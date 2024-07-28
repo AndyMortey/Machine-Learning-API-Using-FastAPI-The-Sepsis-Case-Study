@@ -75,6 +75,27 @@ The frontend is built using Streamlit and provides a user-friendly interface to 
 * This is the History Page that shows Predictions made by the App.
 ![image](https://github.com/user-attachments/assets/13ebd304-ab8a-4e56-8e2d-53b43223c88a)
 
+### Docker
+* This shows the Docker container and Images on Docker Desktop
+![image](https://github.com/user-attachments/assets/ab4aa317-c36e-41ba-9537-4dff1bd2e531)
+![image](https://github.com/user-attachments/assets/cac68c33-0256-45aa-9523-84ef33c0df6c)
+
+## Resources
+**Access the API:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi.onrender.com/docs)
+**Access the Streamlit App:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi-the.onrender.com/)
+**The article published on Medium can be accessed via [this link]().
+
+## Appreciation
+
+I highly recommend Azubi Africa for their comprehensive and effective programs. Read more articles about [Azubi Africa here](https://medium.com/@azubiafrica) and take a few minutes to visit this link to learn more about Azubi Africa life-changing [programs](https://bit.ly/41CGCwK).
+
+## Tags
+
+[Azubi Data Science](https://bit.ly/3ARq742)
+
+
+
+
 
 
 
