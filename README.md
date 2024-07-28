@@ -1,4 +1,3 @@
-# Machine-Learning-API-Using-FastAPI-The-Sepsis-Case-Study
 ![image](https://github.com/user-attachments/assets/10373352-ee0d-41ff-b571-ee0d63bb2e34)
 
 
