@@ -58,3 +58,9 @@ The FastAPI application provides several endpoints to interact with the sepsis p
 * This is the Homepage showing the Datafeatures;
 ![image](https://github.com/user-attachments/assets/66aa2f11-46f8-41b4-8d04-4a2f30a7d8d7)
 
+* This shows the Predict Page which takes the inputs and shows the predictions;
+![image](https://github.com/user-attachments/assets/ed9a49b5-298d-49ba-924b-98424186e52f)
+![image](https://github.com/user-attachments/assets/7e91df18-1917-4a0e-8970-1dbce745630a)
+
+
+
