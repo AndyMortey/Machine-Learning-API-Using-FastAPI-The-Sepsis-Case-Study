@@ -85,6 +85,7 @@ The frontend is built using Streamlit and provides a user-friendly interface to 
 **Access the Streamlit App:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi-the.onrender.com/)
 
 **Article** published on Medium can be accessed via [this link](https://medium.com/@morteyandrews/sepsis-prediction-using-api-293ca926ead3).
+**Link to Dockerhub** [here](https://hub.docker.com/repositories/amore003)
 
 ## Appreciation
 
