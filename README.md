@@ -62,5 +62,22 @@ The FastAPI application provides several endpoints to interact with the sepsis p
 ![image](https://github.com/user-attachments/assets/ed9a49b5-298d-49ba-924b-98424186e52f)
 ![image](https://github.com/user-attachments/assets/7e91df18-1917-4a0e-8970-1dbce745630a)
 
+### Frontend
+The frontend is built using Streamlit and provides a user-friendly interface to interact with the API. Here are some images of the App:
+* This is the Homepage with the Side panel.
+![image](https://github.com/user-attachments/assets/9ede6723-67d4-4938-8738-ca2de3bb54ac)
+
+* This shows the Predict Page with Values and the Prediction.
+![image](https://github.com/user-attachments/assets/9b2454fd-1f72-4660-991d-b207183bbe9a)
+![image](https://github.com/user-attachments/assets/5168d68a-bc43-46d6-85de-7ed79077d467)
+
+* This is the History Page that shows Predictions made by the App.
+![image](https://github.com/user-attachments/assets/13ebd304-ab8a-4e56-8e2d-53b43223c88a)
+
+
+
+
+
+
 
 
