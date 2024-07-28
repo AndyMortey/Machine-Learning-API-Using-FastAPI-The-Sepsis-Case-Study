@@ -84,7 +84,7 @@ The frontend is built using Streamlit and provides a user-friendly interface to 
 
 **Access the Streamlit App:** Open your browser and navigate to [this link](https://machine-learning-api-using-fastapi-the.onrender.com/)
 
-**The article published on Medium can be accessed via [this link]().
+**Article published on Medium can be accessed via [this link]().
 
 ## Appreciation
 
