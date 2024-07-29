@@ -34,7 +34,7 @@ page = st.sidebar.radio("Go to", ["Main", "Predict", "History"])
 if page == "Main":
     st.title("Sepsis Prediction App")
     st.write("Use the Navigation Bar to Access the Other Pages.")
-    st.image("C:/Users/AndyMore/Downloads/Sepsis Homepage.png", caption="Sepsis Prediction", use_column_width=True)
+    st.image("Frontend/Sepsis Homepage.png", caption="Sepsis Prediction", use_column_width=True)
 
 elif page == "Predict":
     st.title("Sepsis Prediction Page")
